@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.start-screen {
+    background-color: #6aa937;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.start-screen input {
+    width: 250px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    height: 30px;
+    text-align: center;
+}
+
+.start-screen button {
+    width: 25%;
+    background-color: #0885d4;
+    border: none;
+    margin-top: 10px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: antiquewhite;
+}
+.start-screen .start-game {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+#alias {
+    font-size: 1.5rem;
+}
+
+.play-screen {
+}
