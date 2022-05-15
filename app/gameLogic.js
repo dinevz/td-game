@@ -1,5 +1,4 @@
-//switch between screens
-let game = gameFactory();
+
 
 game.startBtn.addEventListener('click', (e) => {
     if(!nickname.value) {
@@ -11,6 +10,13 @@ game.startBtn.addEventListener('click', (e) => {
 
         let nicknameElement = document.querySelector('.nickname');
         nicknameElement.textContent = game.nickname.value;
+        fSquare = game.square();
+        
+        for (let index = 0; index < directions.length; index++) {
+            let element = directions[index];
+            nSquare = game.square(fSquare, element);
+            fSquare = nSquare;
+        } 
     }
 
     
