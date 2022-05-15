@@ -1,15 +1,12 @@
 //switch between screens
-let startScreen = document.querySelector('.start-screen');
-let playScreen = document.querySelector('.play-screen');
-let startBtn = document.getElementById('start');
-startBtn.addEventListener('click', (e) => {
-    startScreen.classList.add('hidden');
-    playScreen.classList.remove('hidden');
+let game = gameFactory();
 
+game.startBtn.addEventListener('click', (e) => {
+    if(!nickname.value) {
+        alert('Please enter a nickname!')
+    } else {
+        game.startScreen.classList.add('hidden');
+        game.playScreen.classList.remove('hidden');
+        game.scoreScreen.classList.remove('hidden');
+    }
 });
-
-//create field
-function createField() {
-    let square = document.createElement('div');
-    
-};

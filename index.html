@@ -9,22 +9,21 @@
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-        <header class="score-screen">
+        <header class="score-screen hidden">
             <p class="nickname">$</p>
             <div><p class="gold">Gold: 0 </p><img id="goldCoin" src="./images/gold-coin.png" alt="GoldCoin"></div>
             <p class="wave">Wave: </p>
         </header>
         <div class="start-screen">
                 <div class="start-game">
-                    <button type="button" id="start">Start game</button>
-                    <input type="text" name="alias">
+                    <button type="submit" id="start">Start game</button>
+                    <input id="nickname" type="text" name="alias" required>
                     <label for="alias" id="alias">Enter your nickname: </label>
                 </div>
         </div>
         <div class="play-screen hidden">
-            <div class="square"><i class="fa-solid fa-tree"></i></div>
         </div>
-        <script src="https://kit.fontawesome.com/96fb084ceb.js" crossorigin="anonymous"></script>
+        <script src="./app/gameFactory.js" async defer></script>
         <script src="./app/gameLogic.js" async defer></script>
     </body>
 </html>
