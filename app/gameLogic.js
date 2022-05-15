@@ -7,3 +7,9 @@ startBtn.addEventListener('click', (e) => {
     playScreen.classList.remove('hidden');
 
 });
+
+//create field
+function createField() {
+    let square = document.createElement('div');
+    
+};
