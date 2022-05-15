@@ -11,7 +11,6 @@ game.startBtn.addEventListener('click', (e) => {
 
         let nicknameElement = document.querySelector('.nickname');
         nicknameElement.textContent = game.nickname.value;
-
     }
 
     
