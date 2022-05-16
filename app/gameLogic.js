@@ -1,4 +1,4 @@
-
+let game = gameFactory();
 
 game.startBtn.addEventListener('click', (e) => {
     if(!nickname.value) {
@@ -9,14 +9,8 @@ game.startBtn.addEventListener('click', (e) => {
         game.scoreScreen.classList.remove('hidden');
 
         let nicknameElement = document.querySelector('.nickname');
-        nicknameElement.textContent = game.nickname.value;
-        fSquare = game.square();
+        nicknameElement.textContent = game.nickname.value; 
         
-        for (let index = 0; index < directions.length; index++) {
-            let element = directions[index];
-            nSquare = game.square(fSquare, element);
-            fSquare = nSquare;
-        } 
     }
 
     
